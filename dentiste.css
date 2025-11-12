@@ -42,8 +42,10 @@ a
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 0 2rem;
+    padding: 0 5rem;
     max-width: 1600px;
+    background-color: #64B3F4;
+   
 }
 /* Setup image logo */
 .navbar-container .logo-of-navbar > img
@@ -62,6 +64,7 @@ a
     list-style: none;
     gap: 2rem;
 }
+
 .navbar-container .navbar-menu li a 
 {
     text-decoration: none;
@@ -93,6 +96,84 @@ a
     transition: all 0.5s ease-in-out;
 }
 
+/* Cta Buttons */
+
+#dentist-header 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+
+}
+
+
+
+/* Cta button */
+
+
+.container-cta .glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
 
 
 
@@ -103,7 +184,17 @@ a
     
     .navbar 
 {
-    background-color: white;
+    background-color: rgb(0, 0, 0);
+}
+.navbar-container 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 5rem;
+    max-width: 1600px;
+    background-color: #000;
 }
 .navbar-container .navbar-menu 
 {
@@ -118,6 +209,7 @@ a
     padding: 5rem 1.5rem;
     box-shadow: 0 10px black;
     backdrop-filter: blur(10px);
+    background-color: #000;
 
 }
 /* make navbar menu active to targetit in js event */
@@ -149,6 +241,15 @@ a
  
  }
 
+ 
+
+ /* button cta  */
+
+ .container-cta 
+ {
+    display: none;
+ }
+
 
 
 }
@@ -159,6 +260,8 @@ a
     .navbar-container 
     {
         padding: 0 1rem;
+        background-color: black;
+        
     }
     
     .navbar-container .logo-of-navbar > img
@@ -180,9 +283,20 @@ a
     top: 0;
     padding: 5rem 1.5rem;
     box-shadow: 0 10px black;
-    backdrop-filter: blur(10px);
+    background-color: black;
+    z-index: 999;
 
 }
+
+
+
+
+/* button cta  */
+
+ .container-cta 
+ {
+    display: none;
+ }
 
 
 }
