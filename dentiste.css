@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+html 
+{
+    scroll-behavior: smooth;
+}
+
+body 
+{
+    font-family: "Nunito Sans", sans-serif;
+}
+
+a 
+{
+    text-decoration: none;
+}
+
+
+
+.navbar 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: #64B3F4;
+    z-index: 999;
+}
+
+.navbar-container 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 2rem;
+    max-width: 1600px;
+}
+/* Setup image logo */
+.navbar-container .logo-of-navbar > img
+{
+    width: auto;
+    height: 100px;
+    cursor: pointer;
+
+}
+
+/* start setup nav menu links */
+.navbar-container .navbar-menu 
+{
+    display: flex;
+    text-align: center;
+    list-style: none;
+    gap: 2rem;
+}
+.navbar-container .navbar-menu li a 
+{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+/* finish setup nav menu links */
+
+
+/* start working on toggle button */
+
+.navbar-toggle 
+{
+    /* to make toggle button invisible on destop view */
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.navbar-toggle .bar 
+{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: skyblue;
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+
+
+
+/* Tablet: 768px and up */
+@media (max-width: 768px) {
+    
+    .navbar 
+{
+    background-color: white;
+}
+.navbar-container .navbar-menu 
+{
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.6rem;
+    position: absolute;
+    height: 100vh;
+    width: 250px;
+    top: 0;
+    padding: 5rem 1.5rem;
+    box-shadow: 0 10px black;
+    backdrop-filter: blur(10px);
+
+}
+/* make navbar menu active to targetit in js event */
+.navbar-container .navbar-menu.active 
+{
+    display: flex;
+
+}
+.navbar-toggle 
+{
+    display: block;
+    z-index: 1000;
+}
+/* make navbar menu active to targetit in js event */
+
+.navbar-toggle.active .bar:nth-child(2)
+ {
+    opacity: 0;
+ }
+
+ .navbar-toggle.active .bar:nth-child(1)
+ {
+    transform: translateY(8px) rotate(45deg);
+ }
+
+ .navbar-toggle.active .bar:nth-child(3)
+ {
+    transform: translateY(-8px) rotate(-45deg);
+ 
+ }
+
+
+
+}
+
+
+@media (max-width: 480px) 
+{
+    .navbar-container 
+    {
+        padding: 0 1rem;
+    }
+    
+    .navbar-container .logo-of-navbar > img
+    {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+
+    }
+    .navbar-container .navbar-menu 
+{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    padding: 5rem 1.5rem;
+    box-shadow: 0 10px black;
+    backdrop-filter: blur(10px);
+
+}
+
+
+}
