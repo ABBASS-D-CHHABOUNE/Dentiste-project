@@ -1,0 +1,331 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+html 
+{
+    scroll-behavior: smooth;
+}
+
+body 
+{
+    font-family: "Nunito Sans", sans-serif;
+}
+
+a 
+{
+    text-decoration: none;
+}
+
+/* hero section design basic */
+
+ #Hero-section 
+{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items:baseline;
+    flex-flow: column;
+    background-image: url('./dentiste_media/Images/Hero-Dentiste-background.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+ .hero-container 
+ {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-flow: column nowrap;
+    gap: 20px;
+    padding: 20px;
+    position: relative;
+    left: 50px;
+    
+
+ }
+ .hero-container h1 
+  {
+    font-weight: bold;
+    font-size: 2.8rem;
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+    
+  }
+
+  .hero-container  h3
+  {
+
+    font-weight: 500;
+    padding: 10px;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border-radius:  30px;
+     font-size: 2.1rem;
+    
+  }
+  .hero-container p
+  {
+    font-weight: 200;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 10px 30px;
+    
+  }
+
+  /* Working in Cta */
+  .cta 
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .cta a:first-child 
+  {
+    padding: 10px 30px;
+    background-color: rgba(0, 174, 174, 0.59);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 400;
+    transition-duration: .3s;
+    
+  }
+   .cta a:first-child:hover 
+  {
+    padding: 10px 30px;
+    background-color: rgba(0, 174, 174, 0.59);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 400;
+    box-shadow: 0px 0px 10px black;
+    
+  }
+  .cta a:nth-child(2)
+  {
+    padding: 10px 30px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    border-radius: 5px;
+    font-size: 15px;
+    transition-duration: .3s;
+  }
+  .cta a:nth-child(2):hover
+  {
+    padding: 10px 30px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    border-radius: 5px;
+    font-size: 15px;
+    transition-duration: .3s;
+    box-shadow: 0px 0px 10px black;
+  }
+
+
+
+  
+
+
+
+/* Tablet mode */
+
+@media (max-width: 768px) {
+    
+    #Hero-section 
+{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    overflow: hidden;
+ }
+ .hero-container 
+ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+    left: 0;
+    
+
+ }
+ .hero-container h1 
+  {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.3rem;
+    
+  }
+
+  .hero-container h1 h3
+  {
+    text-align: center;
+    font-weight: 500;
+    
+  }
+  .hero-container h1 h3 p
+  {
+    text-align: center;
+    font-weight: 200;
+    
+  }
+
+  /* Working in Cta */
+  .cta 
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    gap: 10px;
+  }
+  .cta a:first-child 
+  {
+    padding: 10px;
+    background-color: aqua;
+    color: black;
+    font-weight: 600;
+
+  }
+  .cta a:first-child 
+  {
+    padding: 10px;
+    background-color: rgba(0, 174, 174, 0.59);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 400;
+    
+  }
+  .cta a:nth-child(2)
+  {
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-weight: 400;
+    border-radius: 5px;
+    font-size: 15px;
+    
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* Mobile Devices */
+
+@media (max-width: 480px) 
+{
+
+#Hero-section 
+{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    overflow: hidden;
+    background-color: gold;
+ }
+ .hero-container 
+ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    gap: 10px;
+    padding: 15px;
+    position:static;
+
+
+ }
+  .hero-container h1 
+  {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+    
+  }
+
+  .hero-container h3
+  {
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    text-shadow: 0px 10px 15px black ;
+    
+    
+  }
+  .hero-container  p
+  {
+    text-align: center;
+    font-weight: 200;
+    font-size: 12px;
+    border: none;
+    
+  }
+
+  /* Working in Cta */
+  .cta 
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    gap: 10px;
+  }
+ 
+  .cta a:first-child 
+  {
+    padding: 10px;
+    background-color: rgba(0, 174, 174, 0.59);
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    border-radius: 10px;
+    font-size: 12px;
+    
+  }
+  .cta a:first-child:hover 
+  {
+    text-shadow: 0px 10px 15px black ;
+
+  }
+  .cta a:nth-child(2)
+  {
+    padding: 10px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+    font-weight: 400;
+    border-radius: 10px;
+    font-size: 12px;
+    
+    
+  }
+
+}
