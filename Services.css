@@ -1,0 +1,378 @@
+/* Animations */
+
+/* linked css code */
+
+/* Mobile first */
+
+
+
+.Services-headline 
+{
+    width: 100%;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 0;
+}
+.Services-headline h1
+{
+    text-align: center;
+    text-shadow: 0px 10px 10px white;
+    color: white;
+}
+
+
+
+
+
+@media (max-width: 599px) {
+  /* styles for small phones */
+
+  #services 
+{
+    height: 160vh;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+.services-container
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    flex-flow: column wrap;
+    gap: 10px;
+    padding: 10px;
+
+
+}
+.services-container .s-container
+
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    padding: 10px;
+    background-color: white;
+
+}
+
+.services-container .s-container img 
+{
+    width: 100px;
+}
+
+.services-container .s-container .s-box-content 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding: 5px;
+    gap: 10px;
+}
+
+.services-container .s-container .s-box-content h1 
+{
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+}
+.services-container .s-container .s-box-content p 
+{
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+}
+
+.services-container .s-container .services-cta 
+{
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+
+}
+
+.services-container .s-container .services-cta .booking-btn
+{
+    padding: 10px;
+    font-size: 12px;
+    background-color: black;
+    color: white;
+}
+
+
+
+  
+}
+
+
+@media (min-width: 600px) and (max-width: 899px) {
+  /* styles for tablets or large phones */
+
+   #services 
+{
+    height: 100vh;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+.services-container
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    gap: 10px;
+    padding: 10px;
+
+
+}
+.services-container .s-container
+
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    padding: 10px;
+    background-color: white;
+
+}
+
+.services-container .s-container img 
+{
+    width: 100px;
+}
+
+.services-container .s-container .s-box-content 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding: 5px;
+    gap: 10px;
+}
+
+.services-container .s-container .s-box-content h1 
+{
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+}
+.services-container .s-container .s-box-content p 
+{
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+}
+
+.services-container .s-container .services-cta 
+{
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+
+}
+
+.services-container .s-container .services-cta .booking-btn
+{
+    padding: 10px;
+    font-size: 12px;
+    background-color: black;
+    color: white;
+}
+
+  
+}
+
+/* Large devices (tablets & small laptops, 900–1199px) */
+@media (min-width: 900px) and (max-width: 1199px) {
+  /* styles for tablets/laptops */
+
+   #services 
+{
+    height: 100vh;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+.services-container
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    flex-flow: column wrap;
+    gap: 10px;
+    padding: 10px;
+
+
+}
+.services-container .s-container
+
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    padding: 10px;
+    background-color: white;
+
+}
+
+.services-container .s-container img 
+{
+    width: 100px;
+}
+
+.services-container .s-container .s-box-content 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding: 5px;
+    gap: 10px;
+}
+
+.services-container .s-container .s-box-content h1 
+{
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+}
+.services-container .s-container .s-box-content p 
+{
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+}
+
+.services-container .s-container .services-cta 
+{
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+
+}
+
+.services-container .s-container .services-cta .booking-btn
+{
+    padding: 10px;
+    font-size: 12px;
+    background-color: black;
+    color: white;
+}
+}
+
+@media (min-width: 1200px) {
+  /* styles for large screens/desktops */
+
+    #services 
+{
+    height: 100vh;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+.services-container
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    flex-flow: column wrap;
+    gap: 10px;
+    padding: 50px;
+
+
+}
+.services-container .s-container
+
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    padding: 20px;
+    background-color: white;
+
+}
+
+.services-container .s-container img 
+{
+    width: 100px;
+}
+
+.services-container .s-container .s-box-content 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding: 5px;
+    gap: 10px;
+}
+
+.services-container .s-container .s-box-content h1 
+{
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+}
+.services-container .s-container .s-box-content p 
+{
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+}
+
+.services-container .s-container .services-cta 
+{
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+
+}
+
+.services-container .s-container .services-cta .booking-btn
+{
+    padding: 10px;
+    font-size: 12px;
+    background-color: black;
+    color: white;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
