@@ -14,11 +14,23 @@ html
 body 
 {
     font-family: "Nunito Sans", sans-serif;
+    padding-top:90px ;
+   
 }
 
 a 
 {
     text-decoration: none;
+    
+}
+
+#dentist-header 
+{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 999;
+
 }
 
 
@@ -30,10 +42,8 @@ a
     align-items: center;
     height: 90px;
     width: 100%;
-    position: sticky;
-    top: 0;
     background-color: #64B3F4;
-    z-index: 999;
+
 }
 
 .navbar-container 
