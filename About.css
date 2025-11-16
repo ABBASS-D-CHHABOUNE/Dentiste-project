@@ -7,6 +7,49 @@
     display: none;
    }
 
+   /* About-mobile  */
+
+   #Mobile-About 
+   {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    padding: 10px;
+    height: 65vh;
+      }
+
+      .About-mobile-headline 
+      {
+        width: 50%;
+      }
+
+      .About-mobile-headline h1  
+      {
+        width: 100%;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        background-color: white;
+        border-radius: 5px 5px 0px 0px;
+      }
+      .About-media 
+      {
+        width: 100%;
+
+      }
+      .About-media video
+      {
+
+        width: 100%;
+        border-radius: 10px;
+
+      }
+
+      
+
+   
+
 }
 
 
@@ -20,6 +63,44 @@
    {
     display: none;
    }
+   /* About-mobile  */
+
+   #Mobile-About 
+   {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    padding: 10px;
+    height: 80vh;
+      }
+
+      .About-mobile-headline 
+      {
+        width: 50%;
+      }
+
+      .About-mobile-headline h1  
+      {
+        width: 100%;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        background-color: white;
+        border-radius: 5px 5px 0px 0px;
+      }
+      .About-media 
+      {
+        width: 100%;
+
+      }
+      .About-media video
+      {
+
+        width: 100%;
+        border-radius: 10px;
+
+      }
 }
 
 /* Large devices (tablets & small laptops, 900–1199px) */
@@ -29,10 +110,54 @@
    {
     display: none;
    }
+   /* About-mobile  */
+
+   #Mobile-About 
+   {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    padding: 10px;
+    height: 90vh;
+      }
+
+      .About-mobile-headline 
+      {
+        width: 50%;
+      }
+
+      .About-mobile-headline h1  
+      {
+        width: 100%;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        background-color: white;
+        border-radius: 5px 5px 0px 0px;
+      }
+      .About-media 
+      {
+        width: 100%;
+
+      }
+      .About-media video
+      {
+
+        width: 100%;
+        border-radius: 10px;
+
+      }
 }
 
 /* Extra large devices (desktops, 1200px and up) */
 @media (min-width: 1200px) {
+
+  /* Hide mobile */
+  #Mobile-About 
+  {
+    display: none;
+  }
   /* styles for large screens/desktops */
 
   #About 
