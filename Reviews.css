@@ -1,0 +1,535 @@
+@media (max-width: 480px) 
+{
+
+    #Reviews 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    height: 20%;
+    background-color: black;
+}
+/* This is title */
+.Reviews-headlines 
+
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    
+}
+.Reviews-headlines  h1 
+{
+    
+    color: white;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    
+
+
+}
+.Reviews-container 
+{
+    display: grid;
+    grid-template-columns: repeat(1,1fr) ;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 0px;
+    margin: 40px;
+
+}
+
+.the-Reviews 
+{
+
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    width: 100%;
+    border-radius: 5px;
+
+}
+.the-Reviews img
+{
+
+    padding: 20px 0px;
+    width: 100px;
+    border-radius: 50%;
+    height: 150px;
+
+
+}
+
+.review-content 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-flow: column wrap;
+    padding: 10px;
+    gap: 10px;
+}
+.review-content blockquote 
+{
+    padding: 10px;
+    color: white;
+    text-align: center;
+    line-height: 1.6;
+
+}
+.review-content h4 
+{
+    text-align: center;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+.review-content .job 
+{
+    line-height: 2.3;
+    color: white;
+    padding: 2px 20px;
+    border-bottom: 2px solid white;
+    
+
+}
+
+
+}
+
+@media (min-width: 600px) and (max-width: 899px)  
+{
+        #Reviews 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    height: 20%;
+    background-color: black;
+}
+
+/* This is title */
+.Reviews-headlines 
+
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    
+}
+.Reviews-headlines  h1 
+{
+    
+    color: white;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    
+
+
+}
+.Reviews-container 
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr) ;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 0px;
+    margin: 40px;
+
+}
+
+.the-Reviews 
+{
+
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    width: 100%;
+    border-radius: 5px;
+
+}
+.the-Reviews img
+{
+
+    padding: 20px 0px;
+    width: 100px;
+    border-radius: 50%;
+    height: 150px;
+
+
+}
+
+.review-content 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-flow: column wrap;
+    padding: 10px;
+    gap: 10px;
+}
+.review-content blockquote 
+{
+    padding: 10px;
+    color: white;
+    text-align: center;
+    line-height: 1.6;
+
+}
+.review-content h4 
+{
+    text-align: center;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+.review-content .job 
+{
+    line-height: 2.3;
+    color: white;
+    padding: 2px 20px;
+    border-bottom: 2px solid white;
+    
+
+}
+
+}
+
+@media (min-width: 600px) and (max-width: 899px) 
+{
+    #Reviews 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    height: 20%;
+    background-color: black;
+}
+.Reviews-container 
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr) ;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 0px;
+    margin: 40px;
+
+}
+
+.the-Reviews 
+{
+
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    width: 100%;
+    border-radius: 5px;
+
+}
+.the-Reviews img
+{
+
+    padding: 20px 0px;
+    width: 100px;
+    border-radius: 50%;
+    height: 150px;
+
+
+}
+
+.review-content 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-flow: column wrap;
+    padding: 10px;
+    gap: 10px;
+}
+.review-content blockquote 
+{
+    padding: 10px;
+    color: white;
+    text-align: center;
+    line-height: 1.6;
+
+}
+.review-content h4 
+{
+    text-align: center;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+.review-content .job 
+{
+    line-height: 2.3;
+    color: white;
+    padding: 2px 20px;
+    border-bottom: 2px solid white;
+    
+
+}
+    
+}
+
+@media (min-width: 900px) and (max-width: 1199px) 
+{
+
+    #Reviews 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    height: 20%;
+    background-color: black;
+}
+/* This is title */
+.Reviews-headlines 
+
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    
+}
+.Reviews-headlines  h1 
+{
+    
+    color: white;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    
+
+
+}
+.Reviews-container 
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr) ;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 0px;
+    margin: 40px;
+
+}
+
+.the-Reviews 
+{
+
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    width: 100%;
+    border-radius: 5px;
+
+}
+.the-Reviews img
+{
+
+    padding: 20px 0px;
+    width: 100px;
+    border-radius: 50%;
+    height: 150px;
+
+
+}
+
+.review-content 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-flow: column wrap;
+    padding: 10px;
+    gap: 10px;
+}
+.review-content blockquote 
+{
+    padding: 10px;
+    color: white;
+    text-align: center;
+    line-height: 1.6;
+
+}
+.review-content h4 
+{
+    text-align: center;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+.review-content .job 
+{
+    line-height: 2.3;
+    color: white;
+    padding: 2px 20px;
+    border-bottom: 2px solid white;
+    
+
+}
+
+    
+
+}
+
+
+
+
+
+@media (min-width: 1200px) 
+{
+
+#Reviews 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    height: 30%;
+    background-color: black;
+}
+/* This is title */
+.Reviews-headlines 
+
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    
+}
+.Reviews-headlines  h1 
+{
+    
+    color: white;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 45px;
+    
+
+
+}
+.Reviews-container 
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr) ;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 0px;
+    margin: 40px;
+
+}
+
+.the-Reviews 
+{
+
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    width: 100%;
+    border-radius: 5px;
+    transition-duration: .4s;
+    cursor: pointer;
+
+}
+.the-Reviews:hover 
+{
+    transform: translateY(-20px);
+    cursor: pointer;
+    box-shadow: 1px 8px 6px white;
+}
+.the-Reviews img
+{
+
+    padding: 20px 0px;
+    width: 100px;
+    border-radius: 50%;
+    height: 120px;
+
+
+}
+
+.review-content 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-flow: column wrap;
+    padding: 10px;
+    gap: 10px;
+}
+.review-content blockquote 
+{
+    padding: 10px;
+    color: white;
+    text-align: center;
+    line-height: 1.6;
+
+}
+.review-content h4 
+{
+    text-align: center;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+.review-content .job 
+{
+    line-height: 2.3;
+    color: white;
+    padding: 2px 20px;
+    border-bottom: 2px solid white;
+    
+
+}
+    
+
+}
+
+
