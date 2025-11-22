@@ -1,6 +1,6 @@
-@media (max-width: 480px)  
+@media (min-width: 319px) 
 {
-    #Contact-us 
+     #Contact-us 
 {
     display: flex;
     height: 100vh;
@@ -24,7 +24,7 @@
     text-align: center;
     background-color: rgb(255, 255, 255);
     padding: 10px 15px;
-    font-size: 30px;
+    font-size: 20px;
     border-radius: 5px;
 
 }
@@ -156,23 +156,17 @@
 {
     padding: 12px 40px;
     border: none;
-        background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
-
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
     color: white;
     border-radius: 5px;
 }
 
 
-}
 
 
-
-/* For styles for small phones*/
-
-
-@media (max-width: 599px) 
+}  
+@media (max-width: 480px)  
 {
-
     #Contact-us 
 {
     display: flex;
@@ -197,7 +191,181 @@
     text-align: center;
     background-color: rgb(255, 255, 255);
     padding: 10px 15px;
-    font-size: 30px;
+    font-size: 25px;
+    border-radius: 5px;
+
+}
+.contact-headline  h4
+{
+    text-align: center;
+    color: white;
+    padding: 10px 0px;
+    
+}
+
+
+
+.contact-container 
+{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows:  repeat(2,1fr) ;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    
+}
+.contact-container .contact-image-text 
+{
+
+    width: 100%;
+    text-align: center;
+    display: none;
+
+
+
+}
+
+.contact-image-text img 
+{
+    width: 80%;
+    border-radius: 50%;
+}
+
+
+/* start workin on forum */
+.contact-form 
+{
+    padding: 15px;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+
+   
+
+
+}
+.contact-form form 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+     border: 2px solid white;
+     border-radius: 5px;
+    padding: 10px 20px;
+    gap: 10px;
+    background-color: black;
+
+}
+.contact-form .input-fisrtname
+{
+    padding: 10px 20px;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+
+} 
+.contact-form .input-fisrtname::placeholder 
+{
+    color: rgba(0, 0, 0, 0.649);
+}
+
+.contact-form .input-phone
+{
+    padding: 10px 20px;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+
+} 
+.contact-form .input-phone::placeholder 
+{
+    color: rgba(0, 0, 0, 0.649);
+}
+
+
+.contact-form .input-email
+{
+    padding: 10px 20px;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+
+} 
+.contact-form .input-email::placeholder 
+{
+    color: rgba(0, 0, 0, 0.649);
+}
+
+
+.contact-form .input-message
+{
+    padding: 10px 20px;
+    width: 100%;
+    height: 23vh;
+    border: none;
+    border-radius: 3px;
+
+} 
+.contact-form .input-message::placeholder 
+{
+     color: rgba(0, 0, 0, 0.649);
+     font-family: "Nunito Sans", sans-serif;
+}
+
+.contact-submit 
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-submit button 
+{
+    padding: 12px 40px;
+    border: none;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    color: white;
+    border-radius: 5px;
+}
+
+
+
+
+
+}
+
+
+
+/* For styles for small phones*/
+
+
+@media (max-width: 599px) 
+{
+
+    #Contact-us 
+{
+    display: flex;
+    height: 100vh;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    flex-flow: column;
+
+
+}
+.contact-headline 
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding: 10px;
+}
+.contact-headline  h1 
+{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    font-size: 25px;
     border-radius: 5px;
 
 }
@@ -346,8 +514,7 @@
 {
     display: flex;
     height: 100vh;
-        background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
-
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
     flex-flow: column;
 
 
@@ -503,6 +670,176 @@
     color: white;
     border-radius: 5px;
 }
+
+}
+
+
+@media (min-width:1200px) 
+{
+
+    #Contact-us 
+{
+    display: flex;
+    height: 100vh;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    flex-flow: column;
+    gap: 0px;
+
+
+}
+.contact-headline 
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding: 10px;
+}
+.contact-headline  h1 
+{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    font-size: 30px;
+    border-radius: 5px;
+
+}
+.contact-headline  h4
+{
+    text-align: center;
+    color: white;
+    padding: 10px 0px;
+    
+}
+
+
+
+.contact-container 
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:  auto  ;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row;
+    padding: 0px 100px;
+    gap: 0px;
+    
+}
+.contact-container .contact-image-text 
+{
+
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    display: none;
+    
+
+
+
+}
+
+.contact-image-text img 
+{
+    width: 70%;
+    border-radius: 50%;
+
+}
+
+
+/* start workin on forum */
+.contact-form 
+{
+    padding: 5px;
+
+}
+.contact-form form 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+     border: 2px solid white;
+     border-radius: 5px;
+    padding: 10px 20px;
+    gap: 10px;
+    background-color: black;
+
+}
+.contact-form .input-fisrtname
+{
+    padding: 15px 20px;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+
+} 
+.contact-form .input-fisrtname::placeholder 
+{
+    color: rgba(0, 0, 0, 0.649);
+}
+
+.contact-form .input-phone
+{
+    padding: 15px 20px;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+
+} 
+.contact-form .input-phone::placeholder 
+{
+    color: rgba(0, 0, 0, 0.649);
+}
+
+
+.contact-form .input-email
+{
+    padding: 15px 20px;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+
+} 
+.contact-form .input-email::placeholder 
+{
+    color: rgba(0, 0, 0, 0.649);
+}
+
+
+.contact-form .input-message
+{
+    padding: 15px 20px;
+    width: 100%;
+    height: 23vh;
+    border: none;
+    border-radius: 3px;
+
+} 
+.contact-form .input-message::placeholder 
+{
+     color: rgba(0, 0, 0, 0.649);
+     font-family: "Nunito Sans", sans-serif;
+}
+
+.contact-submit 
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-submit button 
+{
+    padding: 12px 40px;
+    border: none;
+        background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+
+    color: white;
+    border-radius: 5px;
+}
+
 
 }
 

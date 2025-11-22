@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dentist | formular</title>
+    <link rel="stylesheet" href="../dentiste.css">
+    <!-- main file Reservations form -->
+     <link rel="stylesheet" href="../Reservation/Reservation-forum.css">
+     <!-- Footer main file -->
+      <link rel="stylesheet" href="../Footer.css">
+</head>
+<body>
+
+
+     <!-- lets make aheader with logo | navbar | cta buttons   -->
+
+    <header id="dentist-header">
+
+       
+        <!-- links  -->
+        <nav class="navbar">
+
+             
+         <div class="navbar-container">
+            <!-- logo -->
+            <a href="#" class="logo-of-navbar"><img src="../dentiste_media/Images/logo-png-transparents.png" alt="Dentist_Logo"></a>
+        
+         <!-- Toggle to Switch into mobile -->
+
+         <button class="navbar-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+         </button>
+         <ul class="navbar-menu">
+            <li><a href="http://">Accueil</a></li>
+            <li><a href="http://">Services</a></li>
+            <li><a href="http://">À propos</a></li>
+            <li><a href="http://">Reviews</a></li>
+            <li><a href="http://">Contactez-nous</a></li>
+         </ul>
+         <div class="container-cta">
+            <a class="glow-on-hover" href="#" > Get a Reservation  </a>
+         </div>
+          </div>
+
+            
+        </nav>
+
+
+
+
+    </header>
+
+    <section class="booking-section">
+  <h2>Book Your Appointment</h2>
+  <p class="sub-text">Fill the form below to reserve a visit with our dentist.</p>
+
+  <form id="bookingForm">
+    <div class="form-group">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Enter your name">
+      <small class="error"></small>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" placeholder="example@mail.com">
+      <small class="error"></small>
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone Number</label>
+      <input type="text" id="phone" placeholder="+212 6 00 00 00 00">
+      <small class="error"></small>
+    </div>
+
+    <div class="form-group">
+      <label for="date">Appointment Date</label>
+      <input type="date" id="date">
+      <small class="error"></small>
+    </div>
+
+    <div class="form-group">
+      <label for="service">Select Service</label>
+      <select id="service">
+        <option value="">-- Choose a service --</option>
+        <option>Teeth Cleaning</option>
+        <option>Whitening</option>
+        <option>Braces Consultation</option>
+        <option>Dental Checkup</option>
+        <option>Tooth Extraction</option>
+      </select>
+      <small class="error"></small>
+    </div>
+
+    <button type="submit" class="submit-btn">Book Now</button>
+  </form>
+
+  <p id="successMessage" class="success-message"></p>
+</section>
+
+
+<!-- Footer -->
+
+
+
+
+     <footer id="myfooter">
+
+        <div class="copyright">
+            <h1>Created By <a href="#">ABBASS CHAHBOUNE</a> &copy;2025</h1>
+        </div>
+
+     </footer>
+
+
+<script src="../Reservation/reservations.js"></script>
+
+
+
+
+
+
+    
+</body>
+</html>
