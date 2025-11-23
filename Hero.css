@@ -104,7 +104,6 @@ a
   }
    .cta a:first-child:hover 
   {
-    padding: 10px 30px;
     background-color: rgba(0, 174, 174, 0.59);
     color: rgb(255, 255, 255);
     border-radius: 5px;
@@ -125,7 +124,6 @@ a
   }
   .cta a:nth-child(2):hover
   {
-    padding: 10px 30px;
     background-color: white;
     color: rgb(0, 0, 0);
     font-weight: 400;
