@@ -32,7 +32,7 @@ form.addEventListener("submit", function(e) {
   if (!valid) return;
 
   // Use your Web App URL here:
-  fecth("https://script.google.com/macros/s/AKfycbycI67_n8IpamHsTLN1dCd7GqkRAvK9PjVYoAGFmnYt8r4MGuJR9nnFCVV1WpfoPJX4gw/exec", {
+  fecth("https://script.google.com/macros/s/AKfycbwf3-RUG5z3TZBrR-Tcq0cyBiMrltN82jdcpgF_W6PY/dev", {
     method: "POST",
     body: JSON.stringify(data),
     // Important: set content-type to plain text to avoid CORS issues

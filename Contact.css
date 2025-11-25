@@ -683,6 +683,7 @@
     height: 100vh;
     background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
     flex-flow: column;
+    justify-content: center;
     gap: 0px;
 
 
