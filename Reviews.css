@@ -337,7 +337,7 @@
 .Reviews-container 
 {
     display: grid;
-    grid-template-columns: repeat(3,1fr) ;
+    grid-template-columns: repeat(4,1fr) ;
     grid-template-rows: auto;
     justify-content: center;
     align-items: center;
@@ -386,6 +386,7 @@
     color: white;
     text-align: center;
     line-height: 1.6;
+    font-size: 14px;
 
 }
 .review-content h4 
@@ -395,6 +396,7 @@
     color: black;
     padding: 10px;
     border-radius: 5px;
+    font-size: 14px;
 }
 .review-content .job 
 {

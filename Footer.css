@@ -1,12 +1,9 @@
-
-
-
 /* Mobile first */
 
-@media (max-width: 768px) 
+@media (min-width: 320px) and (max-width: 450px)
 {
 
-    #myfooter 
+   #myfooter 
 {
     width: 100%;
     background-color: black;
@@ -18,7 +15,7 @@
 {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
     justify-content: center;
     align-items: center;
     gap: 0%;
@@ -30,6 +27,7 @@
     align-items: center;
     flex-flow: column;
     padding: 20px 0px;
+
 }
 
 .footer-links .Footer-containers h3 
@@ -37,15 +35,24 @@
     color: white;
     text-align: left;
     position: relative;
-    padding: 2rem 0rem;
+    padding: 1.5rem 0rem;
 }
 
 
-.footer-links .Footer-containers ,ul ,li ,a 
+.footer-links .Footer-containers .footer-links-ul li
+{
+    display: flex;
+    flex-flow: column;
+    gap: 20%;
+    padding: 15px 0;
+}
+
+.footer-links .Footer-containers ,.footer-links-ul ,li ,a 
 {
     text-decoration: none;
     list-style: none;
     color: white;
+    
 }
 
 
@@ -56,18 +63,19 @@
     justify-content: center;
     align-items: center;
     background-color: black;
-    padding: 20px 0px;
+    
     
 
 }
 .copyright h1
 {
     text-align: center;
-    font-size: 15px;
+    font-size: 12px;
     background-color: black;
     border-top: 1px solid skyblue;
     width: 100%;
     color: white;
+    line-height: 5;
 
     
 }
@@ -77,105 +85,131 @@
     text-align: center;
     color: white;
     border-radius: 10px;
+    padding: 5px 10px;
 
        
 
     
-}
-
+} 
 
 
     
+}
+
+/* Tableets Screens */
+
+@media (min-width: 425px) and (max-width: 768px) 
+
+{
+
+
+
+   #myfooter 
+{
+    width: 100%;
+    background-color: black;
+    
+}
+/* links footer */
+
+.footer-links 
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 0%;
+}
+.footer-links .Footer-containers 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding: 20px 0px;
+
+}
+
+.footer-links .Footer-containers h3 
+{
+    color: white;
+    text-align: left;
+    position: relative;
+    padding: 1.5rem 0rem;
+}
+
+
+.footer-links .Footer-containers .footer-links-ul li
+{
+    display: flex;
+    flex-flow: column;
+    gap: 20%;
+    padding: 15px 0;
+}
+
+.footer-links .Footer-containers ,.footer-links-ul ,li ,a 
+{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    
+}
+
+
+.copyright 
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    
+    
+
+}
+.copyright h1
+{
+    text-align: center;
+    font-size: 12px;
+    background-color: black;
+    border-top: 1px solid skyblue;
+    width: 100%;
+    color: white;
+    line-height: 5;
+
+    
+}
+.copyright h1 a 
+{
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+
+       
+
+    
+} 
+
+
+    
+
+
+
 }
 
 
 /* Laptop */
-@media (min-width: 1024px) {
-    /* styles for laptops/desktops */
 
-    #myfooter 
+@media (min-width: 767px) and (max-width: 1024px) 
+
 {
-    width: 100%;
-    background-color: black;
-    
-}
-/* links footer */
-
-.footer-links 
-{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(1,1fr);
-    justify-content: center;
-    align-items: center;
-    gap: 0%;
-}
-.footer-links .Footer-containers 
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
-    padding: 20px 0px;
-}
-
-.footer-links .Footer-containers h3 
-{
-    color: white;
-    text-align: left;
-    position: relative;
-    padding: 2rem 0rem;
-}
 
 
-.footer-links .Footer-containers ,ul ,li ,a 
-{
-    text-decoration: none;
-    list-style: none;
-    color: white;
-}
 
-
-.copyright 
-{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    padding: 20px 0px;
-    
-
-}
-.copyright h1
-{
-    text-align: center;
-    font-size: 15px;
-    background-color: black;
-    border-top: 1px solid skyblue;
-    width: 100%;
-    color: white;
-
-    
-}
-.copyright h1 a 
-{
-    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
-    text-align: center;
-    color: white;
-    border-radius: 10px;
-
-       
-
-    
-}
-}
-
-
-/* large screen  */
-
-
-#myfooter 
+   #myfooter 
 {
     width: 100%;
     background-color: black;
@@ -207,7 +241,7 @@
     color: white;
     text-align: left;
     position: relative;
-    padding: 2rem 0rem;
+    padding: 1.5rem 0rem;
 }
 
 
@@ -262,10 +296,116 @@
        
 
     
+} 
+
+
+    
+
+
+
+}
+
+/* Very Large laptops and tv  */
+@media (min-width: 1024px) and (max-width: 2560px) 
+
+{
+
+
+
+   #myfooter 
+{
+    width: 100%;
+    background-color: black;
+    
+}
+/* links footer */
+
+.footer-links 
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 0%;
+}
+.footer-links .Footer-containers 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding: 20px 0px;
+
+}
+
+.footer-links .Footer-containers h3 
+{
+    color: white;
+    text-align: left;
+    position: relative;
+    padding: 1.5rem 0rem;
 }
 
 
+.footer-links .Footer-containers .footer-links-ul li
+{
+    display: flex;
+    flex-flow: column;
+    gap: 20%;
+    padding: 15px 0;
+}
+
+.footer-links .Footer-containers ,.footer-links-ul ,li ,a 
+{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    
+}
 
 
+.copyright 
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    
+    
+
+}
+.copyright h1
+{
+    text-align: center;
+    font-size: 12px;
+    background-color: black;
+    border-top: 1px solid skyblue;
+    width: 50%;
+    color: white;
+    line-height: 5;
+
+    
+}
+.copyright h1 a 
+{
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+
+       
+
+    
+} 
+
+
+    
+
+
+
+}
 
 
