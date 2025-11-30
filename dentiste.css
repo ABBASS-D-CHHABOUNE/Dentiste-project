@@ -212,7 +212,7 @@ a:after
     
     .navbar 
 {
-    background-color: rgb(0, 0, 0);
+    background-color: #64B3F4;
 }
 .navbar-container 
 {
@@ -244,6 +244,9 @@ a:after
 .navbar-container .navbar-menu.active 
 {
     display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 
 }
 .navbar-toggle 

@@ -73,7 +73,7 @@ a
   }
   .hero-container p
   {
-    font-weight: 200;
+    font-weight: 400;
     border: 1px solid black;
     border-radius: 30px;
     padding: 10px 30px;
@@ -183,7 +183,7 @@ a
   .hero-container h1 h3 p
   {
     text-align: center;
-    font-weight: 200;
+    font-weight: 400;
     
   }
 

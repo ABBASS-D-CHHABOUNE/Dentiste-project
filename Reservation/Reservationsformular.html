@@ -55,59 +55,75 @@
 
     </header>
 
+
+
+    <!-- Form Resevation -->
+
     <section class="booking-section">
-  <h2>Book Your Appointment</h2>
-  <p class="sub-text">Fill the form below to reserve a visit with our dentist.</p>
+  <h2>Book Your Dentist Appointment</h2>
+  <p class="sub-text">Fill out the form below to reserve a visit.</p>
 
   <form id="bookingForm">
+    
     <div class="form-group">
-      <label for="name">Full Name</label>
-      <input type="text" id="name" placeholder="Enter your name">
-      <small class="error"></small>
+      <label for="fullName">Full Name *</label>
+      <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" autocomplete="name" required>
     </div>
 
     <div class="form-group">
-      <label for="email">Email Address</label>
-      <input type="email" id="email" name="email" placeholder="example@mail.com">
-      <small class="error"></small>
+      <label for="phone">Phone Number *</label>
+      <input type="tel" id="phone" name="phone" placeholder="06XXXXXXXX" 
+             pattern="(06|07)[0-9]{8}" autocomplete="tel" required>
     </div>
 
     <div class="form-group">
-      <label for="phone">Phone Number</label>
-      <input type="text" name="phone" id="phone" placeholder="+212 6 00 00 00 00">
-      <small class="error"></small>
+      <label for="email">Email *</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="email" required>
     </div>
 
     <div class="form-group">
-      <label for="date">Appointment Date</label>
-      <input type="date" name="date" id="date">
-      <small class="error"></small>
-    </div>
-
-    <div class="form-group">
-      <label for="service">Select Service</label>
-      <select id="service" name="service">
-        <option value="">-- Choose a service --</option>
-        <option>Teeth Cleaning</option>
-        <option>Whitening</option>
-        <option>Braces Consultation</option>
-        <option>Dental Checkup</option>
-        <option>Tooth Extraction</option>
+      <label>Gender *</label>
+      <select id="gender" name="gender" required>
+        <option value="">Select gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
       </select>
-      <small class="error"></small>
     </div>
 
-    <button type="submit" class="submit-btn">Book Now</button>
-  </form>
+    <div class="form-group">
+      <label for="city">City *</label>
+      <input type="text" id="city" name="city" placeholder="Enter your city" required>
+    </div>
 
-  <p id="successMessage" class="success-message"></p>
+    <div class="form-group">
+      <label for="date">Choose a Date *</label>
+      <input type="date" id="date" name="date" required>
+    </div>
+
+    <div class="form-group">
+      <label>Service *</label>
+      <select id="service" name="service" required>
+        <option value="">Select a service</option>
+        <option value="Cleaning">Cleaning</option>
+        <option value="Check-up">Check-up</option>
+        <option value="Filling">Filling</option>
+        <option value="Whitening">Whitening</option>
+      </select>
+    </div>
+
+    <button class="btn-submit" id="submitBtn" type="submit">Book Appointment</button>
+
+    <p id="statusMsg"></p>
+
+  </form>
 </section>
 
 
-<!-- Footer -->
+    
 
 
-
+     <!-- Footer -->
 
      <footer id="myfooter">
 
@@ -118,7 +134,6 @@
         </div>
 
      </footer>
-
 
      <!-- Button whatsapp -->
 
@@ -134,11 +149,10 @@
 
 
 
-<!-- <script src="../dentiste.js"></script> -->
-<script src="../Reservation/reservations.js">
 
- 
-</script>
+<script src="./reservations.js"></script>
+
+
 
 
 

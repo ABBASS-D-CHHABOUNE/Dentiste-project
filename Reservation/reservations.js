@@ -1,62 +1,53 @@
+
+
 const form = document.getElementById("bookingForm");
-const successMsg = document.getElementById("successMessage");
+const statusMsg = document.getElementById("statusMsg");
 
-form.addEventListener("submit", function(e) {
-  e.preventDefault();
+form.addEventListener("submit", async (e) => {
+  e.preventDefault(); // Prevent the default form submission
 
-  // Validation logic here...
-  let valid = true;
-  const fields = ["name", "email", "phone", "date", "service"];
-  let data = {};
+  // Collect form data
+  const data = {
+    name: form.fullName.value,
+    phone: form.phone.value,
+    email: form.email.value,
+    gender: form.gender.value,
+    city: form.city.value,
+    date: form.date.value,
+    service: form.service.value
+  };
 
-  fields.forEach(id => {
-    const input = document.getElementById(id);
-  
-    const error = input.nextElementSibling;
-    if (input.value.trim() === "") {
-      error.textContent = "This field is required";
-      valid = false;
+  // Replace with your Google Apps Script Web App URL
+  const scriptURL = "https://script.google.com/macros/s/AKfycbzrdBQ6OeAmo9iat1_uKZT16n61g3F4EARZmehBR-lYjkNqoqPBoXLIu5EUxCDJMeg3/exec";
+
+  const submitBtn = document.getElementById("submitBtn");
+  submitBtn.disabled = true;
+  submitBtn.textContent = "Sending...";
+
+  try {
+    const response = await fetch(scriptURL, {
+      method: "POST",
+      body: JSON.stringify(data)
+    });
+
+    const result = await response.json();
+    if (result.result === "success") {
+      statusMsg.textContent = alert('✅ Your data has been sent successfully!');
+      statusMsg.style.color = "green";
+      form.reset();
     } else {
-      error.textContent = "";
-      data[id] = input.value;
+      throw new Error(result.message || "Failed to submit");
     }
-    if (id === "email" && input.value.trim() !== "") {
-      const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-      if (!pattern.test(input.value)) {
-        error.textContent = "Enter a valid email";
-        valid = false;
-      }
-    }
-  });
-
-  if (!valid) return;
-
-  // Use your Web App URL here:
-  fecth("https://script.google.com/macros/s/AKfycbwf3-RUG5z3TZBrR-Tcq0cyBiMrltN82jdcpgF_W6PY/dev", {
-    method: "POST",
-    body: JSON.stringify(data),
-    // Important: set content-type to plain text to avoid CORS issues
-    headers: {
-      "Content-Type": "text/plain;charset=utf-8"
-    },
-    redirect: "follow"
-  })
-  .then(response => response.text())
-  .then(result => {
-    // The script likely returns something like a JSON string
-    try {
-      const obj = JSON.parse(result);
-      console.log("Response from Apps Script:", obj);
-    } catch (err) {
-      console.warn("Could not parse response as JSON:", result);
-    }
-    successMsg.textContent = "Your appointment has been successfully booked!";
-    form.reset();
-  })
-  .catch(error => {
-    console.error("Error submitting:", error);
-    successMsg.textContent = "Error submitting the form, try again!";
-  });
+  } catch (error) {
+    console.error(error);
+    statusMsg.textContent = "❌ An error occurred, please try again.";
+    statusMsg.style.color = "red";
+  } finally {
+    submitBtn.disabled = false;
+    submitBtn.textContent = "Book Appointment";
+  }
 });
+
+
 
 
